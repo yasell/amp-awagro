@@ -88,13 +88,6 @@ gulp.task("typograf", ["copy"], function() {
 		.pipe(gulp.dest("build/"));
 });
 
-// пока исключено!
-// gulp.task("style-lint", function() {
-// 	return gulp.src("app/css/*.css")
-// 		.pipe(csscomb())
-// 		.pipe(gulp.dest("build/css/"));
-// });
-
 // optimization and format CSS
 gulp.task("style-min", ["copy"], function() {
 	return gulp.src("app/css/*.css")
